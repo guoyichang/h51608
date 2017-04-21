@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var index=0;
+        var sum=0;
+//        while(index<3){
+//            var value=parseInt(prompt("请输入第"+index+"个数字"));
+//            sum=sum+value;
+//            index++;
+//        }
+//        while(1==0){
+//            alert("哈哈哈");
+//        }
+//        var num=5;
+//        do{
+//            var tem=prompt("请输入一个数字")
+//            if(tem>num){
+//                alert("你输入的偏大了");
+//            }else if(tem<num){
+//                alert("你输入的偏小了");
+//            }else{
+//                alert("你输入正确");
+//            }
+//        }while(tem!=num);
+//        var sum=0;
+//        for (var i=0;i<5;i++){
+//            var value=parseInt(prompt("请输入第"+i+"个数"));
+//            sum=sum+value;
+//           // sum+=value;
+//        }
+//        alert(sum);
+
+//       创建一个数组
+        /**
+         * 内置对象数组
+          * @type {Array}
+         */
+
+         //创建一个空数组，没有分配任何空间
+        var array1=new Array();
+        //创建一个有N个空间的数组，
+        var array2=new Array(13);
+        //创建一个已经有值的数组，
+        var array3=new Array("张三","李四");
+
+        //通过字面量创建一个空数组
+        var array4=[];
+        array4.push("张三");
+        array4.push("李四");
+//        alert(array4[1]);
+
+
+
+        var array5=["张三","李四"];
+
+        var array6=[1,2,3,4,5,6,7,8];
+        var result=array6.join("哈哈");
+//        alert(result);
+
+//        alert(array6.length);
+
+//        通过下标的方式访问数组元素
+//        alert(array6[4]);
+/*
+       var name="abcdefghijk";
+        //获取字符串某个位置上的字符
+       var c=name.charAt(5);
+
+        //前包括后不包括
+       var s1= name.substring(3,5);
+        //从3开始截取5个字符
+       var s2= name.substr(3,5);
+        alert(s2);
+*/
+
+
+        //内置对象Math
+//        var num=123.9;
+        //四舍五入的round
+//        var result=Math.round(num);
+
+        //取不大于num的最大整数
+//          var result=Math.floor(num);
+        //取大于num的最小整数
+//             var result=Math.ceil(num);
+        //取随机数0-10
+//           var random=parseInt(Math.random()*1000000)%11;
+//            alert(random);
+
+//        时间函数Date()
+
+        //获取当前的时间
+        var date=new Date();
+
+        //获取当前的年份
+        var y=date.getFullYear();
+        //获取当前的月份
+        var m=date.getMonth()+1;
+
+        var h=date.getHours();
+
+        var m=date.getMinutes();
+
+        var s=date.getSeconds();
+
+        var d=date.getDate();
+        //获取当前一周的第几天
+        var d2=date.getDay();
+
+        //获取自1970年到现在的秒
+        var  times=date.getTime();
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

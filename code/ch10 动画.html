@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top:0px;
+            /*执行的动画名称（执行哪个动画）*/
+            -webkit-animation-name:myAnimation2 ;
+            /*设置动画执行时间*/
+            -webkit-animation-duration:5s ;
+            /*设置动画执行次数*/
+            /*-webkit-animation-iteration-count:5 ;*/
+
+            /*设置反向 normal*/
+            /*-webkit-animation-direction:alternate ;*/
+
+            /*固定下结束位置 forwards backwards*/
+            -webkit-animation-fill-mode:forwards ;
+
+        }
+
+        @keyframes myAnimation {
+            from{
+                  background-color: red;
+                  transform: scale(1,1)  rotate(0deg);
+                  left: 0px;
+            }
+            to{
+                 background-color: green;
+                 transform: scale(0.5,0.5) rotate(360deg);
+                 left: 1000px;
+
+            }
+        }
+
+
+        @keyframes myAnimation2 {
+            0%{
+                /*background-color: red;*/
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+             }
+            25%{
+                left: 300px;
+                top: 0px;
+                transform: rotate(90deg);
+            }
+            50%{
+                left: 300px;
+                top: 200px;
+                transform: rotate(180deg);
+            }
+            100%{
+                left: 0px;
+                top: 200px;
+                transform: rotate(270deg);
+            }
+
+            /*100%{*/
+                /*left: 0px;*/
+                /*top:  0px;*/
+                /*transform: rotate(360deg);*/
+                /*/!*background-color: blue;*!/*/
+            /*}*/
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+
+    </div>
+
+</body>
+</html>

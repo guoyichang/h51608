@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--
+        仿射变换
+         transform
+    -->
+
+    <style>
+
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 220px auto;
+            -webkit-transition: all 1s;
+
+            /*改变旋转位置*/
+            transform-origin: 200px 0px;
+
+        }
+        .div1:active{
+            /*平移*/
+            /*transform:translate(100px,100px) ;*/
+
+             /*transform:translateX(100px);*/
+             /*transform:translateY(100px);*/
+            /*缩放*/
+            /*transform: scale(1.5);
+            /*transfor
+            m: scaleX(1);*/
+
+            /*transform: scaleY(1.5);*!/*/
+
+
+            /*transform: rotateY(91deg) ;*/
+            /*transform: skew(-30deg);*/
+
+
+            transform: rotate(360deg);
+
+        }
+
+        /*.div{*/
+            /*perspective: 300px;*/
+        /*}*/
+
+        img{
+            position: absolute;
+            left: 500px;
+            top: 200px;
+            -webkit-transition: all 1s;
+            transform-origin: 8px 130px;
+        }
+        img:active{
+            transform: rotate(360deg);
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<img src="zhen.png"/>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+
+
+        //定义一个函数 函数名字叫clickAction 没有参数
+        function clickAction(flag){
+
+            if(flag==1){
+                alert("我被单击了");
+            }else if(flag==2){
+                alert("我被双击了");
+            }else{
+                alert("鼠标按下");
+            }
+
+        }
+
+
+
+        //通过keyＣｏｄｅ来判断按下的是哪个键盘
+      function keyDown(event){
+          alert(event.keyCode);
+      }
+
+      function keyUp(event){
+
+      }
+
+        //当所有的元素都加载完了后再绑定事件
+        window.onload=function(){
+            //监控键盘事件
+            document.addEventListener("ke" +
+                    "ydown",keyDown,true);
+//            document.addEventListener("keyup",keyUp,true);
+        }
+
+    </script>
+</head>
+<body>
+<input type="button"  value="单击" onclick="clickAction(1)"/>
+
+<input type="button"  value="双击" ondblclick="clickAction(2)"/>
+
+<input type="button"  value="鼠标按下" onmousedown="clickAction(3)"/>
+
+
+</body>
+
+
+
+</html>

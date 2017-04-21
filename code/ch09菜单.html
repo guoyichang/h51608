@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            margin-top: 50px;
+
+        }
+
+        .first{
+            list-style: none;
+            float: left;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 50px;
+            cursor: pointer;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .first:hover{
+            background-color: black;
+            color: white;
+        }
+        .first:hover li{
+            -webkit-transition: all 0.5s;
+            height: 40px;
+        }
+        .first:hover ul{
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /*二级菜单*/
+        .first  li{
+            list-style: none;
+            font-size: 22px;
+            text-align: center;
+            height: 0px;
+            padding: 0px;
+            /*超出去隐藏*/
+            overflow: hidden;
+            line-height: 30px;
+
+        }
+
+        .first ul{
+            margin-top: 0px;
+            -webkit-transition: background-color 0.5s;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<ul>
+
+    <li class="first">鲁东新闻
+        <ul>
+            <li>鲁东新闻1</li>
+            <li>鲁东新闻2</li>
+            <li>鲁东新闻3</li>
+            <li>鲁东新闻4</li>
+        </ul>
+    </li>
+    <li class="first">学校概况
+        <ul>
+            <li>鲁东新闻1</li>
+            <li>鲁东新闻2</li>
+            <li>鲁东新闻3</li>
+            <li>鲁东新闻4</li>
+        </ul></li>
+
+    <li class="first">学院设置
+        <ul>
+            <li>鲁东新闻1</li>
+            <li>鲁东新闻2</li>
+            <li>鲁东新闻3</li>
+            <li>鲁东新闻4</li>
+        </ul></li>
+    <li class="first">人才培养
+        <ul>
+            <li>鲁东新闻1</li>
+            <li>鲁东新闻2</li>
+            <li>鲁东新闻3</li>
+            <li>鲁东新闻4</li>
+        </ul></li>
+    <li class="first">科学研究
+        <ul>
+            <li>鲁东新闻1</li>
+            <li>鲁东新闻2</li>
+            <li>鲁东新闻3</li>
+            <li>鲁东新闻4</li>
+        </ul></li>
+
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style>
+
+.div1{
+	border:1px dotted red;
+	width:60px;
+	height:60px;
+	/* 设置背景图**/
+	background-image:url(scene.jpg);
+	/* 设置背景图重复
+		no-repeat：不让重复
+		repeat-x:水平方向重复
+		repeat-y:垂直方向重复
+		
+	**/
+	background-repeat:no-repeat;
+	/*
+	   background-origin:背景图片位置
+	   border-box：忽略边框（背景图在边框下面）
+	   content-box:忽略内容（背景不从边框开始）
+	**/
+	/*background-origin:content-box;*/
+	
+		/*
+	   background-size:背景图尺寸
+	   background-size:width height
+	   cover:以最大的属性开始平铺 忽略小的
+	   contain:以最小的属性开始平铺 忽略大的
+	   	background-size:cover;
+	**/
+	background-position:-115px -115px;
+
+ 
+ }
+ 
+ .div2{
+	 width:20px;
+	 height:20px;
+	 display:inline-block;
+	 background-image:url(icon.gif);
+	 background-position:-5px 0px;
+	 
+	 }
+ .div3{
+	 width:20px;
+	 height:20px;
+	
+	 display:inline-block
+	 ;
+	  background-image:url(icon.gif);
+	  background-position:-32px -3px;
+	 
+	 }
+
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="div2">
+    
+    </div>
+    <span> 购物车</span>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="div3">
+    
+    </div>
+    <span> 帮助中心</span>
+</body>
+</html>

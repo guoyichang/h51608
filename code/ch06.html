@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style>
+
+/**
+	选择器优先级	：标签选择器<类选择器<ID选择色
+	交集选择器：语法 例如div.class，中间不留空格
+	并发集选择器：
+	*/
+
+ 
+ /*
+ div.green{
+	 height:50px;
+	 background-color:green;
+}
+*/
+
+.red,.green{
+	height:100px;
+	background-color:yellow;
+}
+	
+	
+.div2 p{
+	height:100px;
+	background-color:yellow;
+	
+}
+
+.name1 .name p{
+	}
+	
+	
+.name1 div.name2{
+	
+}
+
+ .div1  p span{
+	 color:red;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<div class="div1">
+	<div>
+    		<p>
+               <span class="span1">span1 </span>
+               <p class="span1">p1</p>
+            </p>
+    </div>
+
+</div>
+<div class="div1">
+	      <p>
+               <span class="span1">span1 </span>
+               <p class="span1">p1</p>
+          </p>
+</div>
+ 
+
+
+
+
+
+</body>
+</html>
